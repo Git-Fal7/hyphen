@@ -1,0 +1,20 @@
+pkgname="unityx"
+pkgver=10.0.rc5.r5
+pkgrel=1
+pkgdesc="A modern and functional DE"
+arch=(any)
+depends=("nemo" "bash" "fish" "python3" "python-gobject" "libkeybinder3" "nitrogen" "xfwm4" "zenity" "pavucontrol" "network-manager-applet""glib2" "pnmixer-git" "xdotool" "notify-osd" "arandr" "xorg-server-xephyr" "plotinus-unityx-git" "vala-panel-appmenu-valapanel" "xfce4-panel")
+makedepends=("xorg-server-xephyr")
+license=("GPL")
+source=('unityx::git+https://gitlab.com/ubuntu-unity/unity-x/unityx.git')
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "${srcdir}/unityx"
+  git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+}
+
+package() {
+  cd "${srcdir}/unityx"
+  DESTDIR="${pkgdir}" fish ./tools/gen_pkg.fish
+}

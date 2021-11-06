@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+import gi
+
+gi.require_version('Gtk', '3.0')
+
+from gi.repository import Gtk, Gio
+import zenipy
+import os, os.path
+
+imgs = []
+valid_images = [".jpg", ".png"]
+for f in os.listdir('/usr/share/backgrounds'):
+	ext = os.path.splitext(f)[1]
+	if ext.lower() not in valid_images:
+		continue
+	imgs.append(os.path.join(f))
+
+backgrounds = zenipy.zlist(['Background'], imgs, text='Select a background.', width=500, title='Background Selection')
+
+settings = Gio.Settings.new("org.gnome.desktop.background")
+settings.set_string("picture-uri", "file:///usr/share/backgrounds/" + backgrounds[0])
+settings.apply()

@@ -1,0 +1,22 @@
+#!/usr/bin/env fish
+
+set panel_list
+
+function set_field --argument-names dict key value
+    set -g $dict'__'$key $value
+end
+
+function get_field --argument-names dict key
+    eval echo \$$dict'__'$key
+end
+
+function desktop_file;
+    awk '/^'"$argv[2]"'=/ {sub("^'"$argv[2]"'=", ""); gsub(" ?%[cDdFfikmNnUuv]", ""); print $0}' "$argv[1]"
+end
+
+for panel in /usr/share/applications/unityx-*-panel.desktop;
+    set_field panels (desktop_file "$panel" "Name") (desktop_file "$panel" "Exec")
+    set -a panel_list (desktop_file "$panel" "Name")
+end
+
+eval (get_field panels (zenity --list --title="UnityX Settings" --text="Choose one of the following configuration options:" --column="Options" $panel_list))

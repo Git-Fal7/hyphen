@@ -1,0 +1,7 @@
+out
+.build
+.qckdeb
+*.deb
+logs
+arch_test
+settings/zenipy/__pycache__

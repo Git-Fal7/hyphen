@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Background
+Comment=Change the background
+Exec=nitrogen
+Icon=preferences-desktop-wallpaper
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;DesktopSettings;X-Unity-Settings-Panel;X-GNOME-PersonalSettings
+OnlyShowIn=UnityX;
+X-Unity-Settings-Panel=background
+Keywords=Wallpaper;Background;Screen;Desktop;Theme;Appearance;Launcher;Unity;Menus;
+X-Ubuntu-Gettext-Domain=unity-control-center

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=UnityX Arch Settings
+Icon=preferences-system
+Exec=fish /usr/share/unityx/settings/settings.gui
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=System;
+OnlyShowIn=UnityX;
+Keywords=Preferences;Settings;
+X-Ubuntu-Gettext-Domain=unity-control-center

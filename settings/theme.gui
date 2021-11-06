@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+import gi
+
+gi.require_version('Gtk', '3.0')
+
+from gi.repository import Gtk, Gio
+import zenipy
+import os
+
+themes = next(os.walk('/usr/share/themes'))[1]
+
+settings = Gio.Settings.new("org.gnome.desktop.interface")
+
+theme = zenipy.zlist(['Theme'], themes, text='Select a theme. You may need to log out and log in. The current theme is ' + settings.get_value('gtk-theme').get_string() + '.', width=500, title='Theme Selection')
+
+settings.set_string("gtk-theme", theme[0])
+settings.apply()
