@@ -7,3 +7,4 @@
 - modified keybindings/keybindings.py to yml file
 - removed conky
 - made nemo as the desktop-icons manager
+- removed bluman-applet
