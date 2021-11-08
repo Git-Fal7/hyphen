@@ -1,0 +1,9 @@
+- added xfce4-panel
+- added xfce4-docklike
+- replaced rofi with xfce-whiskermenu
+- replaced polybar with xfce4-panel + valapanel-appmenu-xfce
+- replaced feh with nitrogen
+- removed backgrounds script window
+- modified keybindings/keybindings.py to yml file
+- removed conky
+- made nemo as the desktop-icons manager
