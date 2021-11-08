@@ -4,8 +4,12 @@ function settings_daemon --description 'Settings daemon'
     export GTK3_MODULES=(whereis -b libplotinus | awk '{print $2}')
     [ "$GTK3_MODULES" = "" ] && export GTK3_MODULES="/usr/lib/libplotinus.so" || true
     #fish -c "while true; sleep 1 && feh --bg-fill (gsettings get org.gnome.desktop.background picture-uri | tail -c +9 | head -c -2 || echo '/usr/share/unityx/design/images/unityx-background1.png'); end" &
-	#feh --bg-fill (gsettings get org.gnome.desktop.background picture-uri | tail -c +9 | head -c -2 || echo '/usr/share/unityx/design/images/unityx-background1.png') &
-	nitrogen --restore
+    #feh --bg-fill (gsettings get org.gnome.desktop.background picture-uri | tail -c +9 | head -c -2 || echo '/usr/share/unityx/design/images/unityx-background1.png') &
+    
+    #launch nitro
+    nitrogen --restore &
+    
+    #launch xfwm4
     xfwm4 &
 
     # Mkdir Desktop in the home directory
@@ -13,18 +17,22 @@ function settings_daemon --description 'Settings daemon'
 
     # Assign keybindings to rofi.
     #fish -c "cd ~/Desktop && python3 "(echo $PWD)"/keybindings/keybindings2.py" &
+    
     # Add remaining keybindings.
     #fish keybindings/add.fish &
 
     # Launch panel.
     #sleep 1 && fish -c 'polybar -c design/panel.cfg default' &
-	#polybar -c design/panel.cfg default &
-	vala-panel &
-	#launch xfce-panel
-	xfce4-panel &
-
-	#launch nemo-desktop
-	nemo-desktop &
+    #polybar -c design/panel.cfg default &
+    
+    #removed for xfce4-panel + vala-panel-appmenu-xfce
+    #vala-panel &
+    
+    #launch xfce-panel
+    xfce4-panel &
+    
+    #launch nemo-desktop
+    nemo-desktop &
     # Show widgets
     #sleep 2 && fish -c 'for widget in ./design/widgets/*.conf; conky -c $widget &; end' &
 
@@ -50,7 +58,7 @@ function settings_daemon --description 'Settings daemon'
     sleep 1
     nm-applet &
     #blueman-applet &
-	pnmixer &
+    pnmixer &
     #fish -c 'while true; timeout 5 pnmixer; end' &
     set lib_dir '/usr/lib/'(uname -i)'-linux-gnu'    
     $lib_dir/notify-osd || /usr/lib/notify-osd/notify-osd &
@@ -59,8 +67,8 @@ function settings_daemon --description 'Settings daemon'
     # Assign keybinding to log out.
     #python3 keybindings/keybindings.py '<Alt>x' 'exit' 'exit'
 	
-	#all keys in one script (desktop acting weird for some reason)
-	python3 keybindings/keybindings2.py
+    #all keys in one script
+    python3 keybindings/keybindings.py
 
     # Kill all background processes launched
     kill (jobs -p)
