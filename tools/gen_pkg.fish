@@ -17,6 +17,6 @@ cp -r ./*/ $DESTDIR/usr/share/unityx; and \
   rm -rf $DESTDIR/usr/share/unityx/xfce4 \
 cp unityx $DESTDIR/usr/share/unityx
 
-cp -r vala-panel/ /etc/skel/
-cp -r xfce4/ /etc/skel/
+cp -r vala-panel/ $DESTDIR/etc/skel/
+cp -r xfce4/ $DESTDIR/etc/skel/
 
