@@ -11,12 +11,12 @@ cp applications/* $DESTDIR/usr/share/applications
 
 mkdir -p $DESTDIR/usr/share/unityx
 cp -r ./*/ $DESTDIR/usr/share/unityx; and \
-  rm -r $DESTDIR/usr/share/unityx/xsessions \
+  rm -rf $DESTDIR/usr/share/unityx/xsessions \
   
-  rm -r $DESTDIR/usr/share/unityx/vala-panel \
-  rm -r $DESTDIR/usr/share/unityx/xfce4 \
+  rm -rf $DESTDIR/usr/share/unityx/vala-panel \
+  rm -rf $DESTDIR/usr/share/unityx/xfce4 \
 cp unityx $DESTDIR/usr/share/unityx
 
-cp -r vala-panel/ etc/skel/
-cp -r xfce4/ etc/skel/
+cp -r vala-panel/ /etc/skel/
+cp -r xfce4/ /etc/skel/
 
