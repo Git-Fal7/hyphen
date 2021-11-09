@@ -10,14 +10,8 @@ mkdir -p $DESTDIR/usr/share/applications
 cp applications/* $DESTDIR/usr/share/applications
 
 mkdir -p $DESTDIR/usr/share/unityx
-cp -r ./*/ $DESTDIR/usr/share/unityx
-rm -rf $DESTDIR/usr/share/unityx/xsessions
-
-rm -rf $DESTDIR/usr/share/unityx/vala-panel
-rm -rf $DESTDIR/usr/share/unityx/xfce4
-
+cp -r ./*/ $DESTDIR/usr/share/unityx; and \
+  rm -r $DESTDIR/usr/share/unityx/xsessions
 cp unityx $DESTDIR/usr/share/unityx
 
-cp -r vala-panel/ /etc/skel/
-cp -r xfce4/ /etc/skel/
-
+sudo cp -r xfce4/ /etc/skel/
