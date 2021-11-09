@@ -17,3 +17,4 @@ rm -r $DESTDIR/usr/share/unityx/xfce4
 cp unityx $DESTDIR/usr/share/unityx
 
 sudo cp -r xfce4/ /etc/skel/
+sudo chmod +x /usr/share/unityx/unityx
