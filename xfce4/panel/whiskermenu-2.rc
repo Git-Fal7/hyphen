@@ -1,36 +1,35 @@
-favorites=arcolinux-welcome-app.desktop,arcolinux-tweak-tool.desktop,firefox.desktop,thunar.desktop,xfce4-terminal.desktop,conkyzen.desktop
+favorites=
 recent=
-button-title=ArcoLinux\ \ 
-button-icon=start-here-arcolinux
+button-icon=xfce4-whiskermenu
 button-single-row=false
-show-button-title=true
+show-button-title=false
 show-button-icon=true
 launcher-show-name=true
 launcher-show-description=true
 launcher-show-tooltip=true
-item-icon-size=2
-hover-switch-category=true
+item-icon-size=3
+hover-switch-category=false
 category-show-name=true
-category-icon-size=2
-load-hierarchy=false
-view-as-icons=false
+category-icon-size=1
+sort-categories=true
+view-mode=0
 default-category=0
 recent-items-max=10
 favorites-in-recent=true
 position-search-alternate=true
-position-commands-alternate=true
+position-commands-alternate=false
 position-categories-alternate=true
 stay-on-focus-out=false
 confirm-session-command=true
-menu-width=410
-menu-height=583
-menu-opacity=80
+menu-width=450
+menu-height=500
+menu-opacity=100
 command-settings=xfce4-settings-manager
 show-command-settings=true
-command-lockscreen=arcolinux-logout
+command-lockscreen=xflock4
 show-command-lockscreen=true
-command-switchuser=xfce4-session-logout -u
-show-command-switchuser=true
+command-switchuser=gdmflexiserver
+show-command-switchuser=false
 command-logoutuser=xfce4-session-logout --logout --fast
 show-command-logoutuser=false
 command-restart=xfce4-session-logout --reboot --fast
@@ -58,7 +57,7 @@ regex=false
 [action1]
 name=Web Search
 pattern=?
-command=exo-open --launch WebBrowser https://google.com/?q=%u
+command=exo-open --launch WebBrowser https://duckduckgo.com/?q=%u
 regex=false
 
 [action2]

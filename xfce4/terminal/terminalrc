@@ -27,6 +27,7 @@ ScrollingBar=TERMINAL_SCROLLBAR_NONE
 ScrollingLines=10000
 ScrollingUnlimited=TRUE
 FontName=Monospace 10
+BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.600000
 DropdownStatusIcon=FALSE
 MiscShowRelaunchDialog=TRUE
@@ -39,4 +40,3 @@ FontUseSystem=TRUE
 ColorPalette=#3f3f3f;#cc0000;#4e9a06;#c4a000;#3465a4;#75507b;#06989a;#d3d7cf;#555753;#ef2929;#8ae234;#fce94f;#739fcf;#ad7fa8;#34e2e2;#eeeeec
 DropdownAlwaysShowTabs=FALSE
 ScrollingOnOutput=FALSE
-
