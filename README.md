@@ -1,7 +1,7 @@
 # UnityX
 
 ![Screenshot](screenshot.png?raw=true)
-
+> Final result with all installed applications
 ## vala-panel-appmenu
 
 use either the original repo and make your own PKGBUILD or use my repo:
