@@ -11,8 +11,9 @@ mkdir -p $DESTDIR/usr/share/applications
 cp applications/* $DESTDIR/usr/share/applications
 
 mkdir -p $DESTDIR/usr/share/unityx
-cp -r ./*/ $DESTDIR/usr/share/unityx; and \
-  rm -r $DESTDIR/usr/share/unityx/xsessions
+cp -r ./*/ $DESTDIR/usr/share/unityx
+
+rm -r $DESTDIR/usr/share/unityx/xsessions
 
 rm -r $DESTDIR/usr/share/unityx/xfce4
 cp unityx $DESTDIR/usr/share/unityx
