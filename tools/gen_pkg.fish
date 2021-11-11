@@ -19,5 +19,7 @@ cp unityx $DESTDIR/usr/share/unityx
 sudo cp -r $DESTDIR/usr/share/unityx/Adwaita-dark-xfce4 /usr/share/themes/
 rm -r $DESTDIR/usr/share/unityx/Adwaita-dark-xfce4
 
+gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark-Xfce"
+
 sudo cp -r xfce4/ /etc/skel/
 sudo chmod +x /usr/share/unityx/unityx
