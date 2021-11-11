@@ -16,5 +16,8 @@ cp -r ./*/ $DESTDIR/usr/share/unityx; and \
 rm -r $DESTDIR/usr/share/unityx/xfce4
 cp unityx $DESTDIR/usr/share/unityx
 
+sudo cp -r $DESTDIR/usr/share/unityx/Adwaita-dark-xfce4 /usr/share/themes/
+rm -r $DESTDIR/usr/share/unityx/Adwaita-dark-xfce4
+
 sudo cp -r xfce4/ /etc/skel/
 sudo chmod +x /usr/share/unityx/unityx
