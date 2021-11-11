@@ -16,8 +16,8 @@ cp -r ./*/ $DESTDIR/usr/share/unityx; and \
 rm -r $DESTDIR/usr/share/unityx/xfce4
 cp unityx $DESTDIR/usr/share/unityx
 
-sudo cp -r $DESTDIR/usr/share/unityx/Adwaita-dark-Xfce4 /usr/share/themes/
-rm -r $DESTDIR/usr/share/unityx/Adwaita-dark-Xfce4
+sudo cp -r $DESTDIR/usr/share/unityx/Adwaita-dark-Xfce /usr/share/themes/
+rm -r $DESTDIR/usr/share/unityx/Adwaita-dark-Xfce
 
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark-Xfce"
 
