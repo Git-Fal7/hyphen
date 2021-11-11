@@ -58,7 +58,7 @@ function settings_daemon --description 'Settings daemon'
     sleep 1
     nm-applet &
     #blueman-applet &
-    pnmixer &
+    #pnmixer &
     #fish -c 'while true; timeout 5 pnmixer; end' &
     set lib_dir '/usr/lib/'(uname -i)'-linux-gnu'    
     $lib_dir/notify-osd || /usr/lib/notify-osd/notify-osd &
