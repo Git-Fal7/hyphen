@@ -9,7 +9,7 @@ https://github.com/git-fal7/valapanel-appmenu-xfce
 
 ## Note:
 
-below this is the original README from the original repo, im currently building at arch, might tackle for qckdeb.
+below is the original README from the original repo, im currently building at arch, might tackle for qckdeb.
 
 ## About
 
