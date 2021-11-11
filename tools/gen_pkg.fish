@@ -1,4 +1,5 @@
-cd (dirname (status -f))/..
+cd (dirname (status -f))
+cd ../
 
 [ ! -d "$DESTDIR" ]; and echo "No such directory: $DESTDIR"
 [ ! -d "$DESTDIR" ]; and exit
