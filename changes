@@ -8,3 +8,4 @@
 - removed conky
 - made nemo as the desktop-icons manager
 - removed bluman-applet
+- replaced pnmixer with xfce4-pulseaudio-plugin
