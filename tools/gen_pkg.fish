@@ -22,5 +22,5 @@ sudo rm -r /usr/share/unityx/Adwaita-dark-Xfce
 
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark-Xfce"
 
-sudo cp -r xfce4/ ~/.config/
+#sudo cp -r xfce4/ ~/.config/
 sudo chmod +x /usr/share/unityx/unityx
