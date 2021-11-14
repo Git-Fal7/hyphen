@@ -32,7 +32,10 @@ function settings_daemon --description 'Settings daemon'
     xfce4-panel &
     
     #launch nemo-desktop
-    nemo-desktop &
+    # nemo-desktop &
+    
+    #launch xfdesktop
+    xfdesktop &
     # Show widgets
     #sleep 2 && fish -c 'for widget in ./design/widgets/*.conf; conky -c $widget &; end' &
 
