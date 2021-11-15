@@ -6,7 +6,7 @@ arch=(any)
 depends=("xfdesktop" "bash" "fish" "python3" "python-gobject" "libkeybinder3" "xfwm4" "zenity" 
 "pavucontrol" "network-manager-applet" "glib2" "xfce4-pulseaudio-plugin" "xdotool"
 "notify-osd" "arandr" "xorg-server-xephyr" "plotinus-unityx-git" "valapanel-appmenu-xfce" "xfce4-panel" "python-yaml"
-"xfce4-whiskermenu-plugin" "xfce4-docklike-plugin" "lightdm" "lightdm-gtk-greeter")
+"xfce4-whiskermenu-plugin" "xfce4-docklike-plugin" "lightdm" "lightdm-gtk-greeter" "mate-polkit")
 makedepends=("xorg-server-xephyr")
 license=("GPL")
 source=('unityx::git+https://github.com/git-fal7/unityx.git')
