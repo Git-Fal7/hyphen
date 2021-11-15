@@ -1,5 +1,4 @@
 # UnityX
-
 > Final result with all installed applications
 ![Screenshot](screenshot.png?raw=true)
 ## vala-panel-appmenu
