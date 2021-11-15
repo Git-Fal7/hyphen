@@ -19,7 +19,7 @@ sudo cp unityx /usr/share/unityx
 
 sudo cp -r ./config/xfce4/ ~/.config/
 sudo cp -r ./config/Adwaita-dark-Xfce /usr/share/themes/
-sudo cp -r ./config/Flat-Remix-Yellow-Dark /usr/share/icons/
+sudo cp -r ./Flat-Remix-Yellow-Dark /usr/share/icons/
 sudo cp -r ./config/gtk-3.0 ~/.config/
 sudo cp ./config/.gtkrc-2.0 ~/
 
