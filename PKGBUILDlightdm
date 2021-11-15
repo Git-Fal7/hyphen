@@ -15,5 +15,9 @@ sha256sums=('SKIP')
 package() {
   cd "${srcdir}/unityx"
   tar -zxvf config.tar.gz
+  git clone https://github.com/git-fal7/flat-remix
+  cd flat-remix/
+  cp -r Flat-Remix-Yellow-Dark/ "${srcdir}/unityx"
+  cd "${srcdir}/unityx"
   DESTDIR="${pkgdir}" fish ./tools/gen_pkg.fish
 }
