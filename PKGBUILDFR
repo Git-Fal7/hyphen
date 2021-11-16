@@ -6,7 +6,7 @@ pkgdesc="Flat Remix is an icon theme inspired by material design. It is mostly f
 arch=('any')
 url="https://drasite.com/flat-remix"
 license=('GPL3')
-conflicts("flat-remix" "flat-remix-git")
+conflicts=("flat-remix" "flat-remix-git")
 options=('!strip')
 source=("https://github.com/daniruiz/${pkgname}/archive/${pkgver}.tar.gz")
 sha256sums=('SKIP')
