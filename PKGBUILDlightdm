@@ -3,10 +3,10 @@ pkgver=10.0.rc5.r5
 pkgrel=1
 pkgdesc="A modern and functional DE"
 arch=(any)
-depends=("xfdesktop" "bash" "fish" "python3" "python-gobject" "libkeybinder3" "xfwm4" "zenity" 
+depends=("xfdesktop" "bash" "fish" "python3" "python-gobject" "xfwm4"
 "pavucontrol" "network-manager-applet" "glib2" "xfce4-pulseaudio-plugin" "xdotool"
-"notify-osd" "arandr" "xorg-server-xephyr" "plotinus-unityx-git" "valapanel-appmenu-xfce" "xfce4-panel" "python-yaml"
-"xfce4-whiskermenu-plugin" "xfce4-docklike-plugin" "lightdm" "lightdm-gtk-greeter" "polkit-gnome" "lxappearance" "xfsettings")
+"notify-osd" "arandr" "xorg-server-xephyr" "plotinus-unityx-git" "valapanel-appmenu-xfce" "xfce4-panel"
+"xfce4-whiskermenu-plugin" "xfce4-docklike-plugin" "lightdm" "lightdm-gtk-greeter" "polkit-gnome" "xfce4-settings")
 makedepends=("xorg-server-xephyr")
 license=("GPL")
 source=('unityx::git+https://github.com/git-fal7/unityx.git')
@@ -15,9 +15,5 @@ sha256sums=('SKIP')
 package() {
   cd "${srcdir}/unityx"
   tar -zxvf config.tar.gz
-  git clone https://github.com/git-fal7/flat-remix
-  cd flat-remix/
-  cp -r Flat-Remix-Yellow-Dark/ "${srcdir}/unityx"
-  cd "${srcdir}/unityx"
   DESTDIR="${pkgdir}" fish ./tools/gen_pkg.fish
 }
