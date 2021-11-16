@@ -8,7 +8,7 @@ url="https://drasite.com/flat-remix"
 license=('GPL3')
 conflicts=("flat-remix" "flat-remix-git")
 options=('!strip')
-source=("https://github.com/daniruiz/${pkgname}/archive/${pkgver}.tar.gz")
+source=("https://github.com/daniruiz/flat-remix/archive/${pkgver}.tar.gz")
 sha256sums=('SKIP')
 
 package() {
