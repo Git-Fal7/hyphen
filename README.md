@@ -1,5 +1,7 @@
 # UnityX
-> Final result with all installed applications
+This is a modified version to use xfce instead of a fish script to use the full potenital of xfce's customizablity
+
+> Final result with all installed applications (old, new screenshot soon)
 ![Screenshot](screenshot.png?raw=true)
 ## vala-panel-appmenu
 
