@@ -7,6 +7,6 @@ source=("git+https://github.com/git-fal7/Tela-icon-theme.git")
 sha256sums=('SKIP')
 
 package() {
-	cd "${srcdir}/Tela-icon-theme}/"
+	cd "${srcdir}/Tela-icon-theme/"
 	sh ./install.sh
 }
