@@ -1,18 +1,15 @@
-pkgname="unityx"
-pkgver=10.0.rc5.r5
+pkgname="hyphen"
+pkgver=1.0
 pkgrel=1
-pkgdesc="A modern and functional DE"
+pkgdesc="A 'DE'"
 arch=(any)
-depends=("xfdesktop" "bash" "fish" "python3" "python-gobject" "libkeybinder3" "nitrogen" "xfwm4" "zenity" 
-"pavucontrol" "network-manager-applet" "glib2" "xfce4-pulseaudio-plugin" "xdotool"
-"notify-osd" "arandr" "xorg-server-xephyr" "plotinus-unityx-git" "valapanel-appmenu-xfce" "xfce4-panel" "python-yaml"
-"xfce4-whiskermenu-plugin" "xfce4-docklike-plugin")
-makedepends=("xorg-server-xephyr")
+depends=("xfdesktop" "xfwm4" "pavucontrol" "network-manager-applet" "xfce4-pulseaudio-plugin" "xdotool"
+"notify-osd" "xfce4-panel" "xfce4-whiskermenu-plugin" "xfce4-docklike-plugin")
 license=("GPL")
-source=('unityx::git+https://github.com/git-fal7/unityx.git')
+source=('hyphen::git+https://github.com/git-fal7/hyphen.git')
 sha256sums=('SKIP')
 
 package() {
-  cd "${srcdir}/unityx"
+  cd "${srcdir}/hyphen"
   DESTDIR="${pkgdir}" fish ./tools/gen_pkg.fish
 }
