@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Launcher
+Comment=launch your apps
+Exec=panther_launcher
+Icon=org.xfce.panel.applicationsmenu
+Path=
+Terminal=false
+StartupNotify=false
