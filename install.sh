@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 mkdir hypheninstall
 cd hypheninstall/
 
@@ -71,3 +70,34 @@ else
   exit
  fi
 fi
+
+cd ${HOMEDIR}
+#tela-icon-theme
+echo "installing tela-icon-theme"
+
+if pacman -Qs tela-icon-theme > /dev/null; then
+ echo "tela-icon-theme is installed, move on"
+else
+ echo "tela-icon-theme is not installed, installing it"
+ echo "getting the pkgbuild of tela-icon-theme"
+ git clone https://github.com/git-fal7/tela-icon-theme
+ 
+ echo "installing, see the prompts"
+ cd tela-icon-theme/
+ sudo ./install.sh
+ makepkg -si
+ if pacman -Qs tela-icon-theme > /dev/null; then
+  echo "tela-icon-theme has been installed, moving on"
+ else
+  echo "tela-icon-theme has not been installed, exiting"
+  exit
+ fi
+fi
+
+cd ${HOMEDIR}
+#installing via yay
+echo "all is good, now installing the aur packages via yay"
+yay -S panther-launcher-git xfce4-docklike-plugin
+echo "good, now installing"
+cd ..
+makepkg -si
