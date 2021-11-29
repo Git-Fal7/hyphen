@@ -11,6 +11,5 @@ sha256sums=('SKIP')
 
 package() {
   cd "${srcdir}/hyphen"
-  tar -zxvf xfce4.tar.gz
   cp -r xfce4/ ~/.config/
 }
