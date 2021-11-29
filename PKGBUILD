@@ -11,5 +11,5 @@ sha256sums=('SKIP')
 
 package() {
   cd "${srcdir}/hyphen"
-  DESTDIR="${pkgdir}" fish ./tools/gen_pkg.fish
+  tar -zxvf xfce4.tar.gz
 }
