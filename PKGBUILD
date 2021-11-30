@@ -1,4 +1,4 @@
-pkgname="hyphen-de"
+pkgname="hyphen-desktop"
 pkgver=1.0
 pkgrel=1
 pkgdesc="A 'DE'"
