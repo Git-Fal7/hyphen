@@ -1,5 +1,13 @@
 #!/bin/sh
 
+
+#check if full option is on
+if [ "$1" = "-full" ]; then
+ echo "Full option has enabled, replacing PKGBUILD"
+ mv ./PKGBUILDFull ./PKGBUILD
+ echo "done"
+fi
+
 mkdir hypheninstall
 cd hypheninstall/
 
@@ -101,3 +109,5 @@ yay -S panther-launcher-git xfce4-docklike-plugin
 echo "good, now installing"
 cd ..
 makepkg -si
+echo "removing everything"
+rm -rf hyphen
