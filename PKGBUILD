@@ -8,6 +8,5 @@ depends=("xfdesktop" "xfwm4" "network-manager-applet" "xfce4-pulseaudio-plugin" 
 license=("GPL")
 
 package() {
-  cd "${srcdir}/hyphen"
   cp -r xfce4/ ~/.config/
 }
