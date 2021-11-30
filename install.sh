@@ -3,7 +3,7 @@
 mkdir hypheninstall
 cd hypheninstall/
 
-HOMEDIR=$(dirname (status -f))
+HOMEDIR=$(pwd)
 echo "please upgrade all your packages, building stuff is weird"
 sudo pacman -Syu
 
