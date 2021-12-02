@@ -1,2 +1,8 @@
 [user]
 indicatorStyle=1
+showWindowCount=false
+onlyDisplayVisible=false
+onlyDisplayScreen=false
+showPreviews=false
+pinned=
+noWindowsListIfSingle=false
