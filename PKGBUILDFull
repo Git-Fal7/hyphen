@@ -13,4 +13,5 @@ license=("GPL")
 
 package() {
   cp -r xfce4/ ~/.config/
+  sudo cp lightdm-gtk-greeter.conf /etc/lightdm/
 }
