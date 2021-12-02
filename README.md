@@ -7,12 +7,12 @@ this would help for lower-end computers as the amount of processess are minimal.
 ![Screenshot](shot.PNG?raw=true)
 
 # TODO
-- Replace Action Menu in panel for a logout launcher (maybe arcolinux-logout would work).
-- Add a dead simple screenshot.
+- -Replace Action Menu in panel for a logout launcher.- (xfce4-session-logout)
+- -Add a dead simple screenshot.- (maim-sh)
 - Add a launcher.
 - Use xdotool for panther_launcher.
 - Modify keyboard settings.
-- Modify lightdm-gtk-greeter config settings in full version.
-- Add lightdm-gtk-greeter-settings for modifying lightdm-gtk-greeter.
-- Make a bunch of backgrounds, i guess.
-- Add a terminal, anything would work really.
+- -Modify lightdm-gtk-greeter config settings in full version.- (Full version)
+- -Add lightdm-gtk-greeter-settings for modifying lightdm-gtk-greeter.- (Full version)
+- -Make a bunch of backgrounds, i guess.- (gnome-backgrounds)
+- -Add a terminal, anything would work really.- (xfce4-terminal)
