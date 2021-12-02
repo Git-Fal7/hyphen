@@ -1,11 +1,12 @@
 #!/bin/sh
 
-
+FULLMODE=false
 #check if full option is on
 if [ "$1" = "-full" ]; then
  echo "Full option has enabled, replacing PKGBUILD"
  mv ./PKGBUILDFull ./PKGBUILD
  echo "done"
+ FULLMODE=true
 fi
 
 mkdir hypheninstall
@@ -80,6 +81,29 @@ else
 fi
 
 cd ${HOMEDIR}
+
+if [ FULLMODE = true ]; then
+ echo "installing maim-sh"
+ if pacman -Qs maim-sh > /dev/null; then
+  echo "maim-sh is installed, move on"
+ else
+  echo "maim-sh is not installed, installing it"
+  echo "getting the pkgbuild of maim-sh"
+  git clone https://github.com/git-fal7/maim-sh
+
+  echo "installing, see the prompts"
+  cd maim-sh/
+  makepkg -si
+  if pacman -Qs maim-sh > /dev/null; then
+   echo "maim-sh has been installed, moving on"
+  else
+   echo "maim-sh has not been installed, exiting"
+   exit
+  fi
+ fi
+ cd ${HOMEDIR}
+fi
+
 #tela-icon-theme (replaced by papirus-icon-theme)
 #echo "installing tela-icon-theme"
 
