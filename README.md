@@ -8,17 +8,17 @@ this would help for lower-end computers as the amount of processess are minimal.
 
 
 # Installing
-``git clone https://github.com/git-fal7/hyphen
-cd hyphen
-chmod +x ./install.sh``
+``git clone https://github.com/git-fal7/hyphen \
+cd hyphen \
+chmod +x ./install.sh \``
 
 ``./install.sh``
 use -full for full version
 if it returned an error because package maim-sh doesn't exist, run this then run install.sh again.
-``git clone https://github.com/git-fal7/maim-sh
-cd maim-sh
-makepkg -si
-echo "done, it should be installed"
+``git clone https://github.com/git-fal7/maim-sh \
+cd maim-sh \ 
+makepkg -si \
+echo "done, it should be installed" \
 cd ..``
 
 
