@@ -6,7 +6,7 @@ this would help for lower-end computers as the amount of processess are minimal.
 > Current
 ![Screenshot](shot.PNG?raw=true)
 
-# TODO
+# TODO (Most of them are only full version)
 - -Replace Action Menu in panel for a logout launcher.- (xfce4-session-logout)
 - -Add a dead simple screenshot.- (maim-ash)
 - Add a launcher.
