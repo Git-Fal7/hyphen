@@ -4,7 +4,7 @@ Takes about ~300megs of ram in arch using the full pkgbuild, compared to full xf
 this would help for lower-end computers as the amount of processess are minimal.
 
 > Current
-![Screenshot](shot.PNG?raw=true)
+![Screenshot](ss.PNG?raw=true)
 
 # TODO (Most of them are only full version)
 - -Replace Action Menu in panel for a logout launcher.- (xfce4-session-logout)
