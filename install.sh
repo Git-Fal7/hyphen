@@ -128,7 +128,12 @@ fi
 
 #installing via yay
 echo "all is good, now installing the aur packages via yay"
-yay -S panther-launcher-git xfce4-docklike-plugin papirus-icon-theme
+
+if [ "$1" = "-full" ]; then
+ yay -S panther-launcher-git xfce4-docklike-plugin papirus-icon-theme pamac-all update-notifier
+else
+ yay -S panther-launcher-git xfce4-docklike-plugin papirus-icon-theme 
+fi
 echo "good, now installing"
 cd ..
 makepkg -si
