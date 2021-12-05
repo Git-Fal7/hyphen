@@ -7,7 +7,7 @@ depends=("xfdesktop" "xfwm4" "network-manager-applet" "xfce4-pulseaudio-plugin" 
 "xfce4-docklike-plugin" "xfce4-settings" "xfce4-session-lxpolkit" 
 "notify-osd" "xfce4-screensaver" "papirus-icon-theme" "file-roller" "thunar-archive-plugin"
 "gvfs" "lightdm" "lightdm-gtk-greeter" "lightdm-gtk-greeter-settings" "pulseaudio" "xorg-server"
-"maim-sh" "xfce4-terminal" "gnome-backgrounds" "celluloid" "ristretto" "update-notifier" "pamac" "gmrun")
+"maim-sh" "xfce4-terminal" "gnome-backgrounds" "celluloid" "ristretto" "update-notifier-hyphen" "pamac" "gmrun")
 license=("GPL")
 source=(git+git://github.com/git-fal7/hyphen)
 sha256sums=('SKIP')
