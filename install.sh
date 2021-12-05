@@ -1,12 +1,10 @@
 #!/bin/sh
 
-FULLMODE=false
 #check if full option is on
 if [ "$1" = "-full" ]; then
  echo "Full option has enabled, replacing PKGBUILD"
  mv ./PKGBUILDFull ./PKGBUILD
  echo "done"
- FULLMODE=true
 fi
 
 mkdir hypheninstall
@@ -82,7 +80,7 @@ fi
 
 cd ${HOMEDIR}
 
-if [ FULLMODE = true ]; then
+if [ "$1" = "-full" ]; then
  echo "installing maim-sh"
  if pacman -Qs maim-sh > /dev/null; then
   echo "maim-sh is installed, move on"
