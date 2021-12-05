@@ -21,6 +21,17 @@ makepkg -si \
 echo "done, it should be installed" \
 cd ..``
 
+# Why?
+I want to make a light, good looking, "Consistent", can be used in other enviorments and easy to use.
+KDE & GNOME are on the heavy side.
+MATE depends in alot of packages.
+LXDE & LXQT are way too barebones.
+Tilling WMs aren't my thing,
+Xfce is really good at being light and good looking.
+
+# Wayland?
+XFWM4 doesn't have wayland, and there isn't any good alternatives to it.
+wayland is still "unmature".
 
 # TODO (Most of them are only full version)
 - -Replace Action Menu in panel for a logout launcher.- (xfce4-session-logout)
