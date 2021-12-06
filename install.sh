@@ -100,25 +100,25 @@ if [ "$1" = "-full" ]; then
   fi
  fi
  cd ${HOMEDIR}
- echo "installing update-notifier-hyphen"
- if pacman -Qs update-notifier-hyphen > /dev/null; then
-  echo "update-notifier-hyphen is installed, move on"
- else
-  echo "update-notifier-hyphen is not installed, installing it"
-  echo "getting the pkgbuild of update-notifier-hyphen"
-  git clone https://github.com/git-fal7/update-notifier-hyphen
+ #echo "installing update-notifier-hyphen"
+ #if pacman -Qs update-notifier-hyphen > /dev/null; then
+ # echo "update-notifier-hyphen is installed, move on"
+ #else
+ # echo "update-notifier-hyphen is not installed, installing it"
+ # echo "getting the pkgbuild of update-notifier-hyphen"
+ # git clone https://github.com/git-fal7/update-notifier-hyphen
 
-  echo "installing, see the prompts"
-  cd update-notifier-hyphen/
-  makepkg -si
-  if pacman -Qs update-notifier-hyphen > /dev/null; then
-   echo "update-notifier-hyphen has been installed, moving on"
-  else
-   echo "update-notifier-hyphen has not been installed, exiting"
-   exit
-  fi
- fi
- cd ${HOMEDIR}
+ # echo "installing, see the prompts"
+ # cd update-notifier-hyphen/
+ # makepkg -si
+ # if pacman -Qs update-notifier-hyphen > /dev/null; then
+ #  echo "update-notifier-hyphen has been installed, moving on"
+ # else
+ #  echo "update-notifier-hyphen has not been installed, exiting"
+ #  exit
+ # fi
+ #fi
+ #cd ${HOMEDIR}
 fi
 
 #tela-icon-theme (replaced by papirus-icon-theme)
