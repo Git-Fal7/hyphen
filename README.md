@@ -37,10 +37,8 @@ wayland is still "unmature".
 - -Replace Action Menu in panel for a logout launcher.- (xfce4-session-logout)
 - -Add a dead simple screenshot.- (maim-sh)
 - -Add a gui launcher for terminal cmds.- (gmrun)
-- Use xdotool for panther_launcher.
-- Modify keyboard settings.
-  = remove xfce4-screenshot strokes for maim-sh
-  = remove xfce4-appfinder strokes for gmrun
+- -Use xdotool for panther_launcher.-
+- -Modify keyboard settings.-
 - -Modify lightdm-gtk-greeter config settings in full version.- (Full version)
 - -Add lightdm-gtk-greeter-settings for modifying lightdm-gtk-greeter.- (Full version)
 - -Make a bunch of backgrounds, i guess.- (gnome-backgrounds)
