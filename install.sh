@@ -37,21 +37,21 @@ fi
 
 #lxpolkit
 cd ${HOMEDIR}
-echo "nows lxpolkit for polkit gui"
-if pacman -Qs lxpolkit > /dev/null; then
- echo "lxpolkit is installed, move on"
+echo "nows lxpolkit-hyphen for polkit gui"
+if pacman -Qs lxpolkit-hyphen > /dev/null; then
+ echo "lxpolkit-hyphen is installed, move on"
 else
- echo "lxpolkit is not installed, installing it"
- echo "getting the pkgbuild of lxpolkit"
- git clone https://github.com/git-fal7/lxpolkit
+ echo "lxpolkit-hyphen is not installed, installing it"
+ echo "getting the pkgbuild of lxpolkit-hyphen"
+ git clone https://github.com/git-fal7/lxpolkit-hyphen
  
  echo "installing, see the prompts"
- cd lxpolkit/
+ cd lxpolkit-hyphen/
  makepkg -si
- if pacman -Qs lxpolkit > /dev/null; then
-  echo "lxpolkit has been installed, moving on"
+ if pacman -Qs lxpolkit-hyphen > /dev/null; then
+  echo "lxpolkit-hyphen has been installed, moving on"
  else
-  echo "lxpolkit has not been installed, exiting"
+  echo "lxpolkit-hyphen has not been installed, exiting"
   exit
  fi
 fi
